@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -96,6 +97,11 @@ describe("migration rollback", () => {
   });
 });
 
+=======
+import { describe, expect, it } from "vitest";
+import { Db } from "../src/db.js";
+
+>>>>>>> 3e5e32334cada9d7ec342db0d5987aa195e09c79
 describe("Db.tx", () => {
   it("commits on success: inserts row, returns callback value, row count is 1", () => {
     const db = new Db(":memory:", ["CREATE TABLE x (a INTEGER);"]);
